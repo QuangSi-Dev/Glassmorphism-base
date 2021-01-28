@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <title>Glassmorphism</title>
+  </head>
+  <body>
+    <img src="/abstract.jpg" alt="" />
+    <div class="circle"></div>
+    <div class="container" id="glass">
+      <h2 class="seq">Hello everyone</h2>
+      <p class="seq">Have a good day!</p>
+    </div>
+
+    <h1>Glassmorphism Realized</h1>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const glass = document.getElementById("glass");
+    const tl = gsap.timeline({
+      defaults: { ease: "power2.inOut", duration: 1.5 },
+    });
+    tl.from("img", { x: "-10%", opacity: 0 })
+      .from(".container", { opacity: 0, delay: 0.5, duration: 1 }, "-=1.5")
+      .from(".container", { x: "-20%", backdropFilter: "blur(0px)" })
+      .from(".seq", { y: -30, opacity: 0, duration: 0.5 }, "-=0.5");
+  </script>
+</html>
