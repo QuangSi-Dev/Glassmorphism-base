@@ -1,22 +1,21 @@
-body {
+body{
   background-color: rgb(200, 220, 231);
   color: black;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 14em 14em 14em 20em;
   box-sizing: border-box;
 }
-img {
+img{
   position: absolute;
   z-index: -2;
   height: 100vh;
-  top: 0;
-  left: 0;
+  top: 0;left: 0;
 }
 
-.container {
+.container{
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255,0.2);
   padding: 3em;
   border-radius: 3em;
   z-index: 1;
@@ -24,19 +23,16 @@ img {
   border: solid 2px transparent;
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(46, 56, 68, 0.03);
-  width: 300px;
+  width: ;
 }
-h2 {
+h2{
   font-size: 1.7em;
 }
 
-h1,
-h2 {
+h1,h2{
   margin: 0;
 }
-p {
+p{
   margin: 0;
 }
-h1 {
-  font-size: 4em;
-}
+h1{font-size: 4em;}
